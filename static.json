@@ -1,7 +1,8 @@
 {
   "headers": {
     "/*": {
-      "X-Author": "karelense"
+      "X-Author": "karelense",
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
