@@ -6,7 +6,6 @@
       "Content-Type": "text/html; charset=utf-8"
     }
   },
-  "clean_urls": true,
   "routes": {
     "/sample/**": "index.html",
     "/login/**": "index.html"
