@@ -2,7 +2,8 @@
   "headers": {
     "/*": {
       "X-Author": "karelense",
-      "Access-Control-Allow-Origin": "*"
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "text/html; charset=utf-8"
     }
   }
 }
