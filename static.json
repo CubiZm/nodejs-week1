@@ -7,4 +7,8 @@
     }
   },
   "clean_urls": true,
+  "routes": {
+    "/sample/**": "index.html",
+    "/login/**": "index.html"
+  }
 }
