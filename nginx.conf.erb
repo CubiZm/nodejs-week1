@@ -34,6 +34,7 @@ http {
 		listen <%= ENV["PORT"] %>;
 		server_name _;
 		keepalive_timeout 5;
+		rewrite ^/(.*)/$ /$1 permanent;
    }
 
 		location / {
@@ -43,9 +44,9 @@ http {
 			proxy_pass http://app_server;
 
 
-    if ($request_uri ~ ^([^.\?]*[^/])$) {
-        return 301 $1/;
-    }
+			if ($request_uri ~ ^([^.\?]*[^/])$) {
+			  return 301 $1/;
+			}
 
     try_files $uri $uri/ /index.php$is_args$args;
 
