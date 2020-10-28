@@ -7,9 +7,4 @@
     }
   },
   "clean_urls": true,
-  "proxies": {
-    "/api/": {
-      "origin": "https://karelense-week1.herokuapp.com/"
-    }
-  }
 }
