@@ -7,14 +7,4 @@
     }
   },
   "clean_urls": true,
-  "redirects": {
-    "/login": {
-      "url": "/login/",
-      "status": 302
-    },
-    "/sample": {
-      "url": "/sample/",
-      "status": 302
-    }
-  }
 }
