@@ -1,20 +1,14 @@
 {
   "headers": {
-    "/**": {
-      "X-Author": "karelense",
-      "Access-Control-Allow-Origin": "*",
-      "Content-Type": "text/html; charset=utf-8"
-    },
-    "/login/": {
-      "Content-Type": "text/plain; charset=UTF-8"
-    },
-    "/sample/": {
-      "Content-Type": "text/plain; charset=UTF-8"
-    }
-  },
-  "clean_urls": true,
-  "routes": {
-    "/sample/**": "index.html",
-    "/login/**": "index.html"
-  }
+     "/*": { 
+       "X-Author": "VasiaBochkin",
+       "Access-Control-Allow-Origin": "*"
+     }, 
+     "/login/": {
+       "Access-Control-Allow-Origin": "*" 
+     },
+     "/sample/": {
+         "Access-Control-Allow-Origin": "*" 
+     }
+   }
 }
