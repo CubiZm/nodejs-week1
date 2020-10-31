@@ -1,0 +1,5 @@
+const task = x => new Promise((res, rej) => {
+  x < 18 ? rej('no') : res('yes')
+
+  return task.catch(x)
+})
