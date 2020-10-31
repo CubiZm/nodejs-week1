@@ -4,13 +4,18 @@
 
 <script>
 const sendBtn = document.querySelector('#bt')
-const inputValue = document.querySelector('#inp')
-const sendData = fetch(inputValue)
-  .then((response) => {
-    return response = String(inputValue);
-  })
+const input = document.querySelector('#inp')
+const inputValue = input.value
+// const sendData = fetch(inputValue)
+//   .then((response) => {
+//     return response = String(inputValue);
+//   })
 
 
-sendBtn.addEventListener('click', sendData)
+// sendBtn.addEventListener('click', sendData)
+
+let response = await fetch(inputValue);
+
+let text = await response.text();
 
 </script>
