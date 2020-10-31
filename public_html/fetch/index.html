@@ -1,0 +1,17 @@
+<input type="text" id="inp">
+<button type="button" id="bt">Отправить</button>
+
+
+<script>
+const sendBtn = document.querySelector('#bt')
+const inputValue = document.querySelector('#inp').value
+
+const sendData = fetch(inputValue)
+  .then((response) => {
+    return inputValue = response;
+  })
+
+
+sendBtn.addEventListener('click', sendData)
+
+</script>
