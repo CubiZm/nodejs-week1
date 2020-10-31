@@ -7,7 +7,7 @@ const sendBtn = document.querySelector('#bt')
 const inputValue = document.querySelector('#inp')
 const sendData = fetch(inputValue)
   .then((response) => {
-    return response = inputValue.text();
+    return response = String(inputValue);
   })
 
 
